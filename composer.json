@@ -1,12 +1,12 @@
 {
-    "name": "seoservice2020/laravel-phpmorphy",
+    "name": "cam-in-love/laravel-phpmorphy",
     "description": "laravel-phpmorphy - Laravel wrapper for phpMorphy.",
     "keywords": [
         "laravel",
         "phpMorphy",
         "nlp"
     ],
-    "homepage": "https://github.com/SEOService2020/laravel-phpmorphy",
+    "homepage": "https://github.com/cam-in-love/laravel-phpmorphy",
     "license": "MIT",
     "type": "library",
     "authors": [
@@ -16,10 +16,16 @@
             "role": "Developer"
         }
     ],
+    "repositories": {
+        "cam-in-love/phpmorphy": {
+            "type": "vcs",
+            "url": "git@github.com:cam-in-love/phpmorphy.git"
+        }
+    },
     "require": {
-        "php": "^7.2",
-        "seoservice2020/phpmorphy": "^2.2.2",
-        "illuminate/support": "^7.0|^8.0"
+        "php": "^7.2|^8.1",
+        "cam-in-love/phpmorphy": "dev-master",
+        "illuminate/support": "v9.20.0"
     },
     "prefer-stable": true,
     "autoload": {
@@ -39,5 +45,6 @@
                 "Morphy": "SEOService2020\\Morphy\\Facade\\Morphy"
             }
         }
-    }
+    },
+    "minimum-stability": "dev"
 }
